@@ -1,4 +1,6 @@
 import { MOCK_COURSES } from "@/data/mockCourses";
+export const instant = false;
+import { Suspense } from "react";
 import CourseDetailsClient from "./CourseDetailsClient";
 
 export function generateStaticParams() {
@@ -7,7 +9,11 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CoursePage({ params }: { params: { id: string } }) {
-  const { id } = params;
-  return <CourseDetailsClient courseId={id} />;
+export default async function CoursePage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  return (
+    <Suspense fallback={<div>Loading course details...</div>}>
+      <CourseDetailsClient courseId={id} />
+    </Suspense>
+  );
 }
