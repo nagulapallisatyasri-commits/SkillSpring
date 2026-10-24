@@ -8,12 +8,8 @@ import { getEnrolledCourseIds } from "@/utils/storage";
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
-  const [enrolledCount, setEnrolledCount] = useState<number>(() => {
-    if (typeof window !== "undefined") {
-      return getEnrolledCourseIds().length;
-    }
-    return 0;
-  });
+  const [enrolledCount, setEnrolledCount] = useState<number>(0);
+  const [hasMounted, setHasMounted] = useState(false);
   const [navSearch, setNavSearch] = useState("");
 
   // Dropdown States
@@ -23,6 +19,13 @@ export default function Navbar() {
   const coursesRef = useRef<HTMLLIElement>(null);
   const profileRef = useRef<HTMLDivElement>(null);
 
+  // Initialise client‑side state after hydration
+  useEffect(() => {
+    setHasMounted(true);
+    setEnrolledCount(getEnrolledCourseIds().length);
+  }, []);
+
+  // Listen for storage changes to keep count in sync
   useEffect(() => {
     const handleStorageChange = () => {
       setEnrolledCount(getEnrolledCourseIds().length);
@@ -237,7 +240,7 @@ export default function Navbar() {
                 data-testid="nav-my-learning"
               >
                 My Learning
-                {enrolledCount > 0 && (
+                {hasMounted && enrolledCount > 0 && (
                   <span
                     className="nav-counter-pill"
                     id="nav-enrolled-count"

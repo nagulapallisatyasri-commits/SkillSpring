@@ -3673,3 +3673,22 @@ Shape Your Future.'
 14:24:06 [INFO    ] Step 8: Verifying no unhandled error boundaries or crashed pages
 14:24:07 [INFO    ] SkillSpring Complete UI Smoke Journey PASSED successfully.
 14:24:07 [INFO    ] TEST END   : test_skillspring_complete_ui_smoke_journey
+14:30:36 [INFO    ] ============================================================
+14:30:36 [INFO    ] TEST START : test_skillspring_complete_ui_smoke_journey [Browser: chrome]
+14:30:36 [INFO    ] ============================================================
+14:30:37 [INFO    ] Step 1: Navigating to SkillSpring homepage at http://localhost:3000
+14:30:37 [INFO    ] Step 2: Verifying main heading and hero section
+14:30:37 [INFO    ] Main heading text: 'Grow Your Skills.
+Shape Your Future.'
+14:30:37 [INFO    ] Step 3: Verifying course catalogue display and cards
+14:30:37 [INFO    ] Discovered 24 course cards rendered in catalogue grid.
+14:30:37 [INFO    ] Step 4: Opening details for course 'python-automation'
+14:30:38 [INFO    ] Successfully arrived at course page: http://localhost:3000/courses/python-automation
+14:30:38 [INFO    ] Step 5: Verifying left-side course hierarchy sidebar
+14:30:38 [INFO    ] Hierarchy contains 2 selectable lesson entries.
+14:30:38 [INFO    ] Step 6: Verifying right-side course details content area
+14:30:38 [INFO    ] Step 7: Selecting lesson 'lesson-1-intro' from the hierarchy
+14:30:38 [INFO    ] Active lesson title displayed: 'Introduction to Python Automation & Selenium Architecture'
+14:30:38 [INFO    ] Step 8: Verifying no unhandled error boundaries or crashed pages
+14:30:38 [INFO    ] SkillSpring Complete UI Smoke Journey PASSED successfully.
+14:30:38 [INFO    ] TEST END   : test_skillspring_complete_ui_smoke_journey
