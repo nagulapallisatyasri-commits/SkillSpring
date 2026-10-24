@@ -1,121 +1,220 @@
-# SkillSpring — Premium Learning Management Portal & Test Automation Testbed
+# SkillSpring — Learning Management Portal
 
 > **Final-Year BCA Capstone Project**  
 > **Student Developer:** KK (BCA Final-Year)  
 > **Tagline:** *Learn Today. Build Tomorrow.*  
-> **Evaluation Focus:** Premium Full-Stack Frontend Engineering & Enterprise QA Automation with Selenium WebDriver 4
+> **Evaluation Focus:** Modern Frontend Engineering (Next.js 16 + React 19) & Automated QA Testing (Selenium WebDriver 4 + pytest)
 
 ---
 
-## 1. Project Overview & Vision
+## 1. Project Overview & Purpose
 
-**SkillSpring** is a modern, responsive, and deterministic web-based Learning Management Portal redesigned with a crisp, state-of-the-art **Blue-and-White Design System**. It serves two core purposes:
+**SkillSpring** is an educational Learning Management Portal developed as a final-year BCA capstone project. It serves two distinct purposes:
 
 1. **Academic Demonstration of Modern Frontend Architecture:**  
-   Built with **Next.js 16 (React 19)**, TypeScript, and a bespoke Vanilla CSS design system. Features an engaging hero section, a 5-second rotating promotional carousel, 24 verified industry courses across 8 tech domains, an interactive split-column course curriculum player, and a comprehensive student dashboard.
+   Built with **Next.js 16**, **React 19**, **TypeScript**, and a custom **Vanilla CSS** design system. Features an engaging hero section, an educational track carousel, a 24-course catalogue across 8 tech domains, an interactive split-column course curriculum player, and a comprehensive student dashboard.
 
 2. **Enterprise-Grade Test Automation Testbed:**  
    Specifically constructed to validate software quality assurance principles. Using **Python 3**, **Selenium WebDriver 4**, and **pytest**, the suite automates complex end-to-end browser workflows adhering to the industry-standard **Page Object Model (POM)** pattern.
 
 ---
 
-## 2. Blue-and-White Design System
+## 2. Problem Statement & Objectives
 
-The platform features a consistent, professional blue-and-white visual identity:
+### Problem Statement
+Standard web portals often face challenges with flakiness during automated testing when reliant on complex, fluctuating external databases or third-party APIs. In academic QA demonstrations, tests often fail due to network instability rather than frontend regressions.
 
-* **Primary Blue:** `#2563EB` (Interactive actions, brand accents, active states)
-* **Dark Navy:** `#172554` (Headings, brand typography, high-contrast text)
-* **Secondary Blue:** `#60A5FA` (Gradients, secondary highlights, borders)
-* **Light Blue Accent:** `#EFF6FF` (Card backgrounds, tag badges, soft fills)
-* **Background Surface:** `#F8FAFC` & `#FFFFFF` (Clean, elevated presentation)
-* **Text Main:** `#1E293B` & Muted `#64748B` (Readable, accessible typography)
-
----
-
-## 3. Key Portal Features
-
-* 🌟 **Modern Hero Composition:** Visual programming composition with floating interactive cards, active cohort status, and factual statistics.
-* 🔄 **Rotating Promotional Banner Carousel:** 5 rich educational banners (Web Development, Core Programming, Data Science, AI, and Career Skills) auto-rotating every 5 seconds with hover-pause, arrows, and pagination indicators.
-* 📚 **Expanded 24-Course Catalogue:** 24 courses covering 8 domains:
-  1. Programming (Python, Java, C, C++)
-  2. Web Development (HTML/CSS, JavaScript, React, Full-Stack Next.js, Node.js & Express)
-  3. Database Management (SQL, MongoDB, Database Design)
-  4. Data Science (Pandas Data Analysis, Data Visualization, Machine Learning)
-  5. Software Testing (Manual QA Principles, Selenium Automation with Python)
-  6. Artificial Intelligence (AI & Neural Networks Basics)
-  7. Computer Fundamentals (Operating Systems Architecture, Data Structures & Algorithms)
-  8. Career Development (Git & GitHub, Technical Interview Preparation)
-* 🧭 **Course Details Split Layout (Curriculum Hierarchy):**
-  - **Left Sidebar (340px):** Sticky module tree with expandable/collapsible modules, lesson status checkmarks, lock indicators, and course progress bar.
-  - **Right Content Area:** Course overview, instructor details, seat availability badge, learning objectives, interactive lesson reader with formatted code blocks, and assessment navigation.
-* 📊 **Student Dashboard (`/my-learning`):**
-  - Welcome banner with tagline
-  - 4 Summary KPI Cards: Enrolled Courses, Completed Courses, Lessons Completed, Average Progress
-  - Continue Learning section with thumbnail cards and progress bars
-  - Recent Learning quick-resume highlight
-  - Bookmarked Courses section with fast access
-  - Recommended Courses based on remaining catalogue offerings
-  - Enrolled Courses detailed traversal table with QA testbed toolbar
-* 🔖 **Course Bookmarks & Reactive Toasts:** Instant bookmark toggling and feedback toasts.
+### Objectives
+- Create a responsive, accessible learning portal with zero external database dependencies.
+- Manage student state (enrolments, progress, quiz results) deterministically in client-side `localStorage`.
+- Implement automated QA testing with Selenium WebDriver 4 adhering to the Page Object Model.
+- Provide a simple **single-test execution** workflow allowing examiners to verify critical end-to-end flows in seconds.
+- Automatically generate self-contained HTML execution reports with failure screenshots and metadata.
 
 ---
 
-## 4. Technology Stack
+## 3. Technologies Used
 
-| Layer | Technology | Purpose & Responsibility |
-|---|---|---|
-| **Frontend Framework** | **Next.js 16.4.2 (React 19.3.0)** | App Router, partial prerendering, and accessible UI components. |
-| **Styling & UI** | **Vanilla CSS (CSS3)** | Custom design system with modern tokens, soft shadows, and responsive layout. |
-| **Type Safety** | **TypeScript 5.x** | Strict type-checking across data models and frontend components. |
-| **Automation Language**| **Python 3.10+** | Scripting language for all test cases and Page Objects. |
-| **Browser Driver** | **Selenium WebDriver 4.49.0** | W3C WebDriver implementation, explicit dynamic waits (`WebDriverWait`). |
-| **Test Runner** | **pytest 9.1.1** | Test runner, CLI flags, and modular fixtures (`conftest.py`). |
-| **HTML Reporting** | **pytest-html 4.2.0** | Generates interactive HTML test execution reports (`tests/reports/html/report.html`). |
-| **Browsers Supported** | **Google Chrome & Microsoft Edge** | Cross-browser automated verification on Windows via native Selenium Manager. |
-
----
-
-## 5. End-to-End Test Suite Architecture
-
-Per UI redesign requirements, the test suite utilizes **one primary end-to-end smoke test**:
-`tests/test_cases/test_ui_smoke.py::TestSkillSpringUISmoke::test_skillspring_complete_ui_smoke_journey`
-
-### 8 Verification Steps in the Primary Smoke Test:
-1. **Homepage Loading:** Opens `http://localhost:3000` and verifies page title.
-2. **Main Heading:** Confirms hero heading and brand logo visibility.
-3. **Course Catalogue:** Validates catalogue section and presence of course cards.
-4. **Course Details Navigation:** Opens a course card and navigates to `/courses/python-automation`.
-5. **Left Hierarchy Sidebar:** Verifies left curriculum sidebar with modules and progress bar.
-6. **Right Content Area:** Verifies right-side course metadata, instructor, and seat availability.
-7. **Interactive Lesson Navigation:** Selects lesson and verifies title and "Mark as Complete" action.
-8. **UI Stability:** Confirms zero unhandled errors or missing routes.
-
-*(Previous individual test cases have been safely archived in `tests/archive_tests/` for reference).*
+| Layer | Technology | Version | Purpose |
+|---|---|---|---|
+| **Frontend Framework** | Next.js | 16.4.2 | App Router, SSR, hydration, accessible routing |
+| **UI Library** | React | 19.3.0 | Modern declarative UI component architecture |
+| **Type Safety** | TypeScript | 5.x | Strict type safety for data models and components |
+| **Styling** | Vanilla CSS | CSS3 | Custom Blue-and-White theme tokens and responsive layouts |
+| **Test Automation** | Selenium WebDriver | 4.51.0 | W3C standard browser automation |
+| **Test Runner** | pytest | 9.1.1 | Discovery, fixtures, execution engine |
+| **HTML Reporting** | pytest-html | 4.2.0 | Formatted visual test reports (`report.html`) |
+| **Alternative Runner** | unittest | Standard Lib | Comparative object-oriented test demonstration |
 
 ---
 
-## 6. How to Run
+## 4. Actual Project Folder Structure
 
-### Step 1: Start the Frontend Application
+The project has been cleaned and restructured with the Next.js application at the root directory:
+
+```text
+SkillSpring/
+├── src/                                     # Next.js Application Source Code
+│   ├── app/                                 # App Router Pages & Layouts
+│   │   ├── layout.tsx                       # Root layout with Navbar & Footer
+│   │   ├── page.tsx                         # Course Catalogue & Search Filter
+│   │   ├── globals.css                      # Global design system & theme tokens
+│   │   ├── courses/                         # Course Details routes
+│   │   │   └── [id]/page.tsx                # Split-view curriculum & enrolment
+│   │   ├── my-learning/page.tsx             # Student learning dashboard
+│   │   └── learn/[courseId]/                # Modular lesson player & quiz engine
+│   ├── components/                          # Reusable UI components (Navbar, CourseCard, Footer)
+│   ├── data/mockCourses.ts                  # Curated 24-course deterministic dataset
+│   └── utils/storage.ts                     # LocalStorage persistence helpers
+├── public/                                  # Static assets (illustrations, course icons)
+├── tests/                                   # Python Selenium QA Automation Framework
+│   ├── config/                              # settings.py, driver_factory.py
+│   ├── pages/                               # Page Object Model classes
+│   ├── test_cases/                          # Active test suites (test_ui_smoke.py)
+│   ├── archive_tests/                       # Historical individual test cases
+│   ├── data/                                # search_data.csv, quiz_data.json
+│   ├── screenshots/                         # Timestamped failure screenshots
+│   ├── reports/html/                        # Self-contained HTML test reports
+│   └── conftest.py                          # Pytest fixtures and screenshot hooks
+├── docs/                                    # Academic & Technical Documentation
+│   ├── PROJECT_DOCUMENTATION.md             # Complete project submission document
+│   ├── TEST_EXECUTION_GUIDE.md              # Test execution steps for examiners
+│   ├── USER_MANUAL.md                       # Application user manual
+│   └── PROJECT_PLAN.md                      # Detailed technical specifications
+├── run_single_test.sh                       # Quick-run shell script for single smoke test
+├── run_frontend.bat                         # Windows frontend launcher
+├── run_tests_chrome.bat                     # Windows Chrome test launcher
+├── run_tests_edge.bat                       # Windows Edge test launcher
+├── run_unittest.bat                         # Windows unittest comparison launcher
+├── package.json                             # Node.js dependencies & scripts
+├── tsconfig.json                            # TypeScript configuration
+├── next.config.ts                           # Next.js compiler settings
+├── pytest.ini                               # Pytest configuration & markers
+├── requirements.txt                         # Python testing dependencies
+└── README.md                                # Master project overview
+```
+
+---
+
+## 5. Existing Features
+
+- 🌟 **Modern Hero Composition:** Visual programming branding with active enrollment badges and statistics.
+- 🔄 **Promotional Banner Carousel:** Highlighting Web Development, Programming, Data Science, AI, and Career Skills.
+- 📚 **Expanded 24-Course Catalogue:** Across 8 domains (Programming, Web Dev, Databases, Data Science, Testing, AI, Fundamentals, Career).
+- 🔍 **Real-Time Search & Filtering:** Dynamic search by course title, instructor, and description with category and difficulty filters.
+- 🧭 **Course Details Split Layout:**
+  - **Left Sidebar:** Sticky curriculum hierarchy with expandable modules, lesson statuses, lock indicators, and progress tracking.
+  - **Right Content Area:** Course overview, instructor profile, real-time seat availability badge, and learning objectives.
+- 📝 **Course Enrolment Logic:** One-click registration with dynamic seat decrementation and defensive rejection for full courses.
+- 📊 **Student Dashboard (`/my-learning`):** Summary KPI cards, Continue Learning resume cards, bookmarks, and detailed summary data table.
+- 📖 **Interactive Lesson Player:** Formatted lesson text, code snippets, takeaways, and "Mark as Complete" progress advancement.
+- 🎯 **Interactive Quiz Engine:** Multi-question assessment with instant scoring, passing/failing status banners, and detailed explanations.
+- 🔒 **Gated Lesson Protection:** Lock icons and defensive warning banners blocking uncompleted prerequisite modules.
+
+---
+
+## 6. System Requirements & macOS Setup Instructions
+
+### System Requirements
+- **macOS** (Apple Silicon or Intel) or **Windows 10/11**
+- **Node.js:** v18.0.0 or higher (v20+ recommended)
+- **Python:** v3.10 to v3.14
+- **Google Chrome** or **Microsoft Edge**
+
+### Step-by-Step macOS Execution
+
+#### Step 1: Install Dependencies & Start the Application
+Open your macOS Terminal at the project root:
 ```bash
-cd frontend
+# Verify Node and npm
+node -v
+npm -v
+
+# Install dependencies
+npm install
+
+# Start the Next.js development server
 npm run dev
-# Or for the optimized production build:
-# npm run build
-# npm start
 ```
-The portal is available at: `http://localhost:3000`
+The application will start at: **`http://localhost:3000`**
 
-### Step 2: Run the Automated Smoke Test
-From the project root:
+#### Step 2: Set Up Python Virtual Environment
+Open a **second terminal window** at the project root:
 ```bash
-# On Google Chrome:
-python -m pytest tests/test_cases/ -v --browser=chrome
+# Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
 
-# On Microsoft Edge:
-python -m pytest tests/test_cases/ -v --browser=edge
-
-# Or double-click the batch file:
-run_tests_chrome.bat
+# Install test dependencies
+pip install -r requirements.txt
 ```
-View HTML execution reports at: `tests/reports/html/report.html`
+
+---
+
+## 7. How to Run Only ONE Selected Test Case
+
+To avoid executing the entire test suite every time, run the single primary smoke test:
+
+### Using the macOS/Linux Script
+```bash
+./run_single_test.sh
+```
+
+### Using Direct Pytest Command
+```bash
+python3 -m pytest tests/test_cases/test_ui_smoke.py::TestSkillSpringUISmoke::test_skillspring_complete_ui_smoke_journey -v
+```
+
+### Verified Single Test Run Details
+- **Test Case:** `test_skillspring_complete_ui_smoke_journey`
+- **Scope:** Verifies homepage opening, brand identity, course catalogue rendering, opening course details, verifying the curriculum hierarchy sidebar, checking course metadata, and navigating to an individual lesson.
+- **Browser:** Google Chrome (Headless via Selenium 4)
+- **Result:** **PASSED (100%) in 2.50s**
+- **Report Generated:** `tests/reports/html/report.html`
+
+---
+
+## 8. Optional: Running Full Suite & Unittest
+
+### Running Full Test Suite (Optional)
+```bash
+python3 -m pytest tests/test_cases/ -v
+```
+
+### Running Unittest Comparison
+```bash
+python3 -m unittest tests/archive_tests/test_comparison_unittest.py
+```
+
+---
+
+## 9. Troubleshooting
+
+1. **Permission Denied (`node_modules/.bin/next`):**  
+   Occurs if executables lack execute flags after cloning. Fix with:  
+   `chmod +x node_modules/.bin/*`
+2. **Port 3000 In Use:**  
+   Find and terminate the process holding port 3000:  
+   `lsof -i :3000` then `kill <PID>`
+3. **Selenium WebDriver ERR_CONNECTION_REFUSED:**  
+   Ensure the frontend development server (`npm run dev`) is actively running in another terminal window before starting tests.
+
+---
+
+## 10. Project Limitations & Future Enhancements
+
+### Limitations
+- **Client-Side Persistence:** State is stored in browser `localStorage`.
+- **Simulated Authentication:** No external user directory or OAuth backend.
+- **No Database Server:** Eliminating external databases guarantees portability across exam machines, but limits multi-user concurrent data sharing.
+
+### Future Enhancements
+- Integration of a dedicated Node.js/Express backend with MongoDB.
+- Role-based access control with NextAuth.js.
+- Embedded interactive code runner for in-browser coding practice.
+
+---
+
+## 11. Conclusion
+
+SkillSpring demonstrates a full-stack educational web application integrated with an enterprise-grade automated testing framework. By combining Next.js 16, React 19, and Selenium WebDriver 4 with the Page Object Model, the project delivers a reliable, verifiable capstone project suitable for BCA final-year academic evaluation.

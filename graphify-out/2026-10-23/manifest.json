@@ -1,0 +1,584 @@
+{
+  "frontend/eslint.config.mjs": {
+    "mtime": 1792304379.8741686,
+    "seen": 1792559443.9215677,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "frontend/next.config.ts": {
+    "mtime": 1792306063.709792,
+    "seen": 1792559443.9215677,
+    "ast_hash": "7fb20ecbaa8b63972052c97d0505fd01",
+    "semantic_hash": "7fb20ecbaa8b63972052c97d0505fd01"
+  },
+  "frontend/package.json": {
+    "mtime": 1792559957.5204647,
+    "seen": 1792766763.1116319,
+    "ast_hash": "0af529e6491895f37517d734e1c3b702",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/courses/[id]/CourseDetailsClient.tsx": {
+    "mtime": 1792766318.1185963,
+    "seen": 1792766763.1116319,
+    "ast_hash": "f67fc2181461528e1bd35fdfb7e20a7a",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/courses/[id]/page.tsx": {
+    "mtime": 1792310158.3491685,
+    "seen": 1792559443.9215677,
+    "ast_hash": "0ac08a8a12f5f34586f7e8dfb2baf6a7",
+    "semantic_hash": "0ac08a8a12f5f34586f7e8dfb2baf6a7"
+  },
+  "frontend/src/app/layout.tsx": {
+    "mtime": 1792766477.723132,
+    "seen": 1792766763.1116319,
+    "ast_hash": "b6fdc9cd52ab2d2ff05ab73b2302483e",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/learn/[courseId]/lesson/[lessonId]/LessonPlayerClient.tsx": {
+    "mtime": 1792766358.9914713,
+    "seen": 1792766763.1116319,
+    "ast_hash": "71d3d71aa31b11fdac51aa06b9b46c3d",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/learn/[courseId]/lesson/[lessonId]/page.tsx": {
+    "mtime": 1792310189.5940828,
+    "seen": 1792559443.9215677,
+    "ast_hash": "d9b6fe35bd26cb42286cfe32f5d42a4b",
+    "semantic_hash": "d9b6fe35bd26cb42286cfe32f5d42a4b"
+  },
+  "frontend/src/app/learn/[courseId]/quiz/CourseQuizClient.tsx": {
+    "mtime": 1792310206.934439,
+    "seen": 1792559443.9215677,
+    "ast_hash": "b725c1c901955582a98c3b9a8aec6de1",
+    "semantic_hash": "b725c1c901955582a98c3b9a8aec6de1"
+  },
+  "frontend/src/app/learn/[courseId]/quiz/page.tsx": {
+    "mtime": 1792310213.7511077,
+    "seen": 1792559443.9215677,
+    "ast_hash": "82c94b632fa164b13f149d2e8730d7b3",
+    "semantic_hash": "82c94b632fa164b13f149d2e8730d7b3"
+  },
+  "frontend/src/app/my-learning/page.tsx": {
+    "mtime": 1792766429.4750428,
+    "seen": 1792766763.1116319,
+    "ast_hash": "cc53f098be7a948e7121b81b71d328a0",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/page.tsx": {
+    "mtime": 1792766268.36604,
+    "seen": 1792766763.1116319,
+    "ast_hash": "c09252a632ed6815229a85476e70e9d7",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/CourseCard.tsx": {
+    "mtime": 1792766227.740541,
+    "seen": 1792766763.1116319,
+    "ast_hash": "51a377cea49a530f26fab26dde9fdf9c",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/Footer.tsx": {
+    "mtime": 1792766446.2023926,
+    "seen": 1792766763.1116319,
+    "ast_hash": "aeac1a254dac7e6d0c82ac3b31330f9b",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/LessonSidebar.tsx": {
+    "mtime": 1792766336.8854241,
+    "seen": 1792766763.1116319,
+    "ast_hash": "e4927665259fa627c1df647bcbc1f5cb",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/Navbar.tsx": {
+    "mtime": 1792766239.1756282,
+    "seen": 1792766763.1116319,
+    "ast_hash": "be567ec616282c0ab46ca8c55c6aaead",
+    "semantic_hash": ""
+  },
+  "frontend/src/data/mockCourses.ts": {
+    "mtime": 1792766053.8668797,
+    "seen": 1792766763.1116319,
+    "ast_hash": "6c896f011d63d1090816bdff42af6a43",
+    "semantic_hash": ""
+  },
+  "frontend/src/utils/storage.ts": {
+    "mtime": 1792766079.695925,
+    "seen": 1792766763.1116319,
+    "ast_hash": "1303297cc44617a92a5cd537c29d4379",
+    "semantic_hash": ""
+  },
+  "frontend/tsconfig.json": {
+    "mtime": 1792306063.7313015,
+    "seen": 1792559443.9215677,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "tests/__init__.py": {
+    "mtime": 1792321426.7361138,
+    "seen": 1792559443.9215677,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "tests/config/__init__.py": {
+    "mtime": 1792320348.410585,
+    "seen": 1792559443.9215677,
+    "ast_hash": "e8c08f2f776d06b79fde3480f9916eee",
+    "semantic_hash": "e8c08f2f776d06b79fde3480f9916eee"
+  },
+  "tests/config/driver_factory.py": {
+    "mtime": 1792481713.0069308,
+    "seen": 1792559443.9215677,
+    "ast_hash": "fe9d6693bf7eeb410efc7b9da4b60c42",
+    "semantic_hash": "fe9d6693bf7eeb410efc7b9da4b60c42"
+  },
+  "tests/config/settings.py": {
+    "mtime": 1792481695.5723264,
+    "seen": 1792559443.9215677,
+    "ast_hash": "8568e766bfe612c5022ee770885ab3f7",
+    "semantic_hash": "8568e766bfe612c5022ee770885ab3f7"
+  },
+  "tests/conftest.py": {
+    "mtime": 1792481971.718082,
+    "seen": 1792559443.9215677,
+    "ast_hash": "6faf4390a1d227d3028e471badcc9a33",
+    "semantic_hash": "6faf4390a1d227d3028e471badcc9a33"
+  },
+  "tests/data/__init__.py": {
+    "mtime": 1792321426.7735326,
+    "seen": 1792559443.9215677,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "tests/data/quiz_data.json": {
+    "mtime": 1792320599.189926,
+    "seen": 1792559443.9215677,
+    "ast_hash": "bb1cef0378b560cba12d989034a341b7",
+    "semantic_hash": "bb1cef0378b560cba12d989034a341b7"
+  },
+  "tests/data/test_data.py": {
+    "mtime": 1792321399.106011,
+    "seen": 1792559443.9215677,
+    "ast_hash": "1f14afac692dbc6243faddf0081a25a1",
+    "semantic_hash": "1f14afac692dbc6243faddf0081a25a1"
+  },
+  "tests/pages/__init__.py": {
+    "mtime": 1792320410.2900858,
+    "seen": 1792559443.9215677,
+    "ast_hash": "14c50321f9d8b8051efdba6affeca5c4",
+    "semantic_hash": "14c50321f9d8b8051efdba6affeca5c4"
+  },
+  "tests/pages/base_page.py": {
+    "mtime": 1792320403.4426908,
+    "seen": 1792559443.9215677,
+    "ast_hash": "524f593a99f46d54924ee74cc2c00500",
+    "semantic_hash": "524f593a99f46d54924ee74cc2c00500"
+  },
+  "tests/pages/course_catalogue_page.py": {
+    "mtime": 1792321810.0262942,
+    "seen": 1792559443.9215677,
+    "ast_hash": "fc5da48eb724a7341fbe602d8f854179",
+    "semantic_hash": "fc5da48eb724a7341fbe602d8f854179"
+  },
+  "tests/pages/course_details_page.py": {
+    "mtime": 1792320458.9813526,
+    "seen": 1792559443.9215677,
+    "ast_hash": "f8eb36d6c8602437c6ef7e3a22261e73",
+    "semantic_hash": "f8eb36d6c8602437c6ef7e3a22261e73"
+  },
+  "tests/pages/lesson_player_page.py": {
+    "mtime": 1792321411.6649065,
+    "seen": 1792559443.9215677,
+    "ast_hash": "c73c7474584a1b274981ce5eda95a2bb",
+    "semantic_hash": "c73c7474584a1b274981ce5eda95a2bb"
+  },
+  "tests/pages/my_learning_page.py": {
+    "mtime": 1792320487.8207583,
+    "seen": 1792559443.9215677,
+    "ast_hash": "64bbd55207e0631e762211d48471e184",
+    "semantic_hash": "64bbd55207e0631e762211d48471e184"
+  },
+  "tests/pages/quiz_page.py": {
+    "mtime": 1792320535.2610052,
+    "seen": 1792559443.9215677,
+    "ast_hash": "3a94b1e47ffdf4c632967131d2fde247",
+    "semantic_hash": "3a94b1e47ffdf4c632967131d2fde247"
+  },
+  "tests/test_cases/__init__.py": {
+    "mtime": 1792320952.1886892,
+    "seen": 1792559443.9215677,
+    "ast_hash": "99d6f1ea96408c676258cb6616728df0",
+    "semantic_hash": "99d6f1ea96408c676258cb6616728df0"
+  },
+  "README.md": {
+    "mtime": 1792766739.5882406,
+    "seen": 1792766763.1116319,
+    "ast_hash": "7e7f4d1c2d62d9e29942f0a637246f1c",
+    "semantic_hash": ""
+  },
+  "docs/PROJECT_PLAN.md": {
+    "mtime": 1792512637.8847005,
+    "seen": 1792559443.9215677,
+    "ast_hash": "39fbe98bbf6d1985b957f20e584bc777",
+    "semantic_hash": "39fbe98bbf6d1985b957f20e584bc777"
+  },
+  "docs/TEST_EXECUTION_GUIDE.md": {
+    "mtime": 1792512407.3768508,
+    "seen": 1792559443.9215677,
+    "ast_hash": "90d19380927b7e2b69c681b9f5b55557",
+    "semantic_hash": "90d19380927b7e2b69c681b9f5b55557"
+  },
+  "frontend/AGENTS.md": {
+    "mtime": 1792306263.0329268,
+    "seen": 1792559443.9215677,
+    "ast_hash": "c98dbebb744eadc1acc4b9f58bfe0f42",
+    "semantic_hash": "c98dbebb744eadc1acc4b9f58bfe0f42"
+  },
+  "frontend/README.md": {
+    "mtime": 1792304379.816296,
+    "seen": 1792559443.9215677,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "requirements.txt": {
+    "mtime": 1792320309.887843,
+    "seen": 1792559443.9215677,
+    "ast_hash": "5c6df37e4b265c6fe7cbcd2c83084e5d",
+    "semantic_hash": "5c6df37e4b265c6fe7cbcd2c83084e5d"
+  },
+  "tests/reports/html/failure_demo_report.html": {
+    "mtime": 1792481986.0232232,
+    "seen": 1792559443.9215677,
+    "ast_hash": "cb9d5a8bb5dc4c26c4c2573c93abcee0",
+    "semantic_hash": "cb9d5a8bb5dc4c26c4c2573c93abcee0"
+  },
+  "tests/reports/html/report.html": {
+    "mtime": 1792766714.510385,
+    "seen": 1792766763.1116319,
+    "ast_hash": "778c6762185da83ac1ba4ef838fb2745",
+    "semantic_hash": ""
+  },
+  "frontend/public/file.svg": {
+    "mtime": 1792304379.926944,
+    "seen": 1792559443.9215677,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "frontend/public/globe.svg": {
+    "mtime": 1792304379.9447267,
+    "seen": 1792559443.9215677,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "frontend/public/next.svg": {
+    "mtime": 1792304379.9687383,
+    "seen": 1792559443.9215677,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "frontend/public/vercel.svg": {
+    "mtime": 1792304379.984033,
+    "seen": 1792559443.9215677,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "frontend/public/window.svg": {
+    "mtime": 1792304380.0001802,
+    "seen": 1792559443.9215677,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  },
+  "tests/screenshots/FAIL_test_intentional_failure_for_screenshot_verification_20261020_130725.png": {
+    "mtime": 1792481845.4938066,
+    "seen": 1792559443.9215677,
+    "ast_hash": "84c7cef6b5f09ac6efee1446de20b952",
+    "semantic_hash": "84c7cef6b5f09ac6efee1446de20b952"
+  },
+  "tests/screenshots/FAIL_test_tc01_search_python_course_title_and_level_20261018_163924.png": {
+    "mtime": 1792321764.7454102,
+    "seen": 1792559443.9215677,
+    "ast_hash": "76b0673203d81df5170f84444aa9af2b",
+    "semantic_hash": "76b0673203d81df5170f84444aa9af2b"
+  },
+  "tests/screenshots/FAIL_test_tc08_attempt_click_locked_item_blocks_navigation_20261018_164436.png": {
+    "mtime": 1792322076.858883,
+    "seen": 1792559443.9215677,
+    "ast_hash": "dda121a7c25ba38e6e34b82d5e17817c",
+    "semantic_hash": "dda121a7c25ba38e6e34b82d5e17817c"
+  },
+  "tests/screenshots/FAIL_test_tc08_unlocking_prereq_enables_next_lesson_20261018_164301.png": {
+    "mtime": 1792321981.9198208,
+    "seen": 1792559443.9215677,
+    "ast_hash": "d4637297ada9f7719bcca8a654c4c448",
+    "semantic_hash": "d4637297ada9f7719bcca8a654c4c448"
+  },
+  "frontend/src/components/PromoBanner.tsx": {
+    "mtime": 1792766202.4451416,
+    "seen": 1792766763.1116319,
+    "ast_hash": "10ff643a6647ae8cf755c7f3f78bccae",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/Toast.tsx": {
+    "mtime": 1792766211.8560014,
+    "seen": 1792766763.1116319,
+    "ast_hash": "154de49006d979156e2fc4f56480b9a1",
+    "semantic_hash": ""
+  },
+  "generate_assets.py": {
+    "mtime": 1792765826.8623757,
+    "seen": 1792766763.1116319,
+    "ast_hash": "4ed43241fddf44cbc913a6bedef55dd3",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_comparison_unittest.py": {
+    "mtime": 1792321197.143955,
+    "seen": 1792766763.1116319,
+    "ast_hash": "38a2fd39ccbf764ad9058418f774e2cc",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_course_search.py": {
+    "mtime": 1792320985.269917,
+    "seen": 1792766763.1116319,
+    "ast_hash": "11c9437a866ae7872fe65587e3e659f7",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_enrolment.py": {
+    "mtime": 1792321019.0584886,
+    "seen": 1792766763.1116319,
+    "ast_hash": "a39d3decad786dbb5c361d5410d176cd",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_failure_screenshot_demo.py": {
+    "mtime": 1792481781.5778136,
+    "seen": 1792766763.1116319,
+    "ast_hash": "dd53554230a3bd2016db87a9ea5962e5",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_lesson_progress.py": {
+    "mtime": 1792321074.9608016,
+    "seen": 1792766763.1116319,
+    "ast_hash": "9fb6842aa798fb8faee9ae72c28ebd73",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_locked_lesson.py": {
+    "mtime": 1792322088.4112957,
+    "seen": 1792766763.1116319,
+    "ast_hash": "27abdfe73029dc7c465f0f48fae46f1e",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_my_learning.py": {
+    "mtime": 1792321134.4218986,
+    "seen": 1792766763.1116319,
+    "ast_hash": "74406123964be70f83b7c7a8f77c07f9",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_new_tab.py": {
+    "mtime": 1792321047.4413588,
+    "seen": 1792766763.1116319,
+    "ast_hash": "49da5dd3baf55ff08e80244e051c1ca1",
+    "semantic_hash": ""
+  },
+  "tests/archive_tests/test_quiz.py": {
+    "mtime": 1792321106.1608934,
+    "seen": 1792766763.1116319,
+    "ast_hash": "2a7e27161ada12a590d9067497e9eb88",
+    "semantic_hash": ""
+  },
+  "tests/test_cases/test_ui_smoke.py": {
+    "mtime": 1792766583.2166262,
+    "seen": 1792766763.1116319,
+    "ast_hash": "f08e7be944cb87045919606fea4c7825",
+    "semantic_hash": ""
+  },
+  "update_courses.py": {
+    "mtime": 1792766042.1515033,
+    "seen": 1792766763.1116319,
+    "ast_hash": "aa7cc7742fbf88480cdb80319b6473ac",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/banners/banner-ai.svg": {
+    "mtime": 1792765840.1504476,
+    "seen": 1792766763.1116319,
+    "ast_hash": "33fad83aa9632f94ab43ca57efe5625e",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/banners/banner-career.svg": {
+    "mtime": 1792765840.1504476,
+    "seen": 1792766763.1116319,
+    "ast_hash": "9c8d30cd4a6ea9afd3b52b5226dde88f",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/banners/banner-data-science.svg": {
+    "mtime": 1792765840.1482825,
+    "seen": 1792766763.1116319,
+    "ast_hash": "9e52612daab9bd89da644984b6e1ff3b",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/banners/banner-programming.svg": {
+    "mtime": 1792765840.1482825,
+    "seen": 1792766763.1116319,
+    "ast_hash": "3ae0bee1fd68d6d46f223c7a75b13c4c",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/banners/banner-web-dev.svg": {
+    "mtime": 1792765840.1477585,
+    "seen": 1792766763.1116319,
+    "ast_hash": "0e5c334f0dbc6e977d8a7a78aaac27b1",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/ai-foundations.svg": {
+    "mtime": 1792765840.1701555,
+    "seen": 1792766763.1116319,
+    "ast_hash": "b975baed06ea33880d2203fa55d7132c",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/c-programming.svg": {
+    "mtime": 1792765840.15964,
+    "seen": 1792766763.1116319,
+    "ast_hash": "277b1456f7737c0c38db3931336035cd",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/cloud-architecture.svg": {
+    "mtime": 1792765840.154924,
+    "seen": 1792766763.1116319,
+    "ast_hash": "ff9f227e12aa626194b8d63707967a39",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/course-fallback.svg": {
+    "mtime": 1792765840.1726758,
+    "seen": 1792766763.1116319,
+    "ast_hash": "047114d69d3ca6e86b3b767704f3aaa0",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/cpp-programming.svg": {
+    "mtime": 1792765840.1609285,
+    "seen": 1792766763.1116319,
+    "ast_hash": "985e18b2d0f51e8fd652f0d28191f9a3",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/cybersecurity.svg": {
+    "mtime": 1792765840.154924,
+    "seen": 1792766763.1116319,
+    "ast_hash": "e66ee4882e52c05f67d4507add8dbd10",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/data-science.svg": {
+    "mtime": 1792765840.154924,
+    "seen": 1792766763.1116319,
+    "ast_hash": "18f679a0bd32743a73ecac7779afb267",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/data-visualization.svg": {
+    "mtime": 1792765840.1664054,
+    "seen": 1792766763.1116319,
+    "ast_hash": "31a487967074e50607be1a3944b4b5c6",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/database-design.svg": {
+    "mtime": 1792765840.1653976,
+    "seen": 1792766763.1116319,
+    "ast_hash": "500dd8c05ea85f0a237d77a76789034d",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/dsa.svg": {
+    "mtime": 1792765840.1716666,
+    "seen": 1792766763.1116319,
+    "ast_hash": "ccde77b26cccb6a7bd017841ac9a299d",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/fullstack-web-dev.svg": {
+    "mtime": 1792765840.1619375,
+    "seen": 1792766763.1116319,
+    "ast_hash": "387b45cab713c7822b47f903c5251b56",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/git-github.svg": {
+    "mtime": 1792765840.1726758,
+    "seen": 1792766763.1116319,
+    "ast_hash": "d9f829994edc48baddf345817a437ac3",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/interview-prep.svg": {
+    "mtime": 1792765840.1726758,
+    "seen": 1792766763.1116319,
+    "ast_hash": "03cae48593d94baac8fe91cfb0bf525b",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/java-programming.svg": {
+    "mtime": 1792765840.1569345,
+    "seen": 1792766763.1116319,
+    "ast_hash": "5998f60e5e7abd7a32883afe67993aeb",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/javascript-essentials.svg": {
+    "mtime": 1792765840.1619375,
+    "seen": 1792766763.1116319,
+    "ast_hash": "62e79c34d8c91b70df31d8629b556141",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/machine-learning.svg": {
+    "mtime": 1792765840.167912,
+    "seen": 1792766763.1116319,
+    "ast_hash": "0901b73a856cfeab015e2dea3c180a62",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/mongodb-fundamentals.svg": {
+    "mtime": 1792765840.1638613,
+    "seen": 1792766763.1116319,
+    "ast_hash": "f0dfdc58092cf7835c11c7c424b54e3f",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/nodejs-express.svg": {
+    "mtime": 1792765840.1638613,
+    "seen": 1792766763.1116319,
+    "ast_hash": "9310f4810d4d8959bf680cc52ae179c4",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/os-architecture.svg": {
+    "mtime": 1792765840.1701555,
+    "seen": 1792766763.1116319,
+    "ast_hash": "478e3ca1f71f9a76d173f6ed514f4ebe",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/python-automation.svg": {
+    "mtime": 1792765840.1519587,
+    "seen": 1792766763.1116319,
+    "ast_hash": "bdd2de82ac8aa54176c2165ec42b0b0d",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/react-deep-dive.svg": {
+    "mtime": 1792765840.1519587,
+    "seen": 1792766763.1116319,
+    "ast_hash": "92792b9087e6caf628b77bfa2e47981a",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/selenium-automation.svg": {
+    "mtime": 1792765840.1689377,
+    "seen": 1792766763.1116319,
+    "ast_hash": "3c6797fa72edf2f35c08b5163276c6ab",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/software-testing.svg": {
+    "mtime": 1792765840.1689377,
+    "seen": 1792766763.1116319,
+    "ast_hash": "9e0a6cfe7487504d509d51ee01f7e83d",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/sql-fundamentals.svg": {
+    "mtime": 1792765840.1638613,
+    "seen": 1792766763.1116319,
+    "ast_hash": "46987abd7bd983c88d4efa72b90612cb",
+    "semantic_hash": ""
+  },
+  "frontend/public/images/courses/web-dev-basics.svg": {
+    "mtime": 1792765840.1519587,
+    "seen": 1792766763.1116319,
+    "ast_hash": "608fd96528b09314cd284c4498295255",
+    "semantic_hash": ""
+  },
+  "tests/screenshots/FAIL_test_intentional_failure_for_screenshot_verification_20261020_130943.png": {
+    "mtime": 1792481983.7814624,
+    "seen": 1792766763.1116319,
+    "ast_hash": "84c7cef6b5f09ac6efee1446de20b952",
+    "semantic_hash": ""
+  }
+}

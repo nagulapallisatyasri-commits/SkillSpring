@@ -1,0 +1,18 @@
+[
+  {
+    "scenario_id": "all_correct",
+    "description": "Submit all correct answers — expected: Passed, Score 2/2",
+    "answers": {"q1": "b", "q2": "a"},
+    "expected_score": "2/2",
+    "expected_feedback": "Passed",
+    "expected_css_class": "alert-success"
+  },
+  {
+    "scenario_id": "all_incorrect",
+    "description": "Submit all wrong answers — expected: Needs Improvement, Score 0/2",
+    "answers": {"q1": "a", "q2": "c"},
+    "expected_score": "0/2",
+    "expected_feedback": "Needs Improvement",
+    "expected_css_class": "alert-danger"
+  }
+]

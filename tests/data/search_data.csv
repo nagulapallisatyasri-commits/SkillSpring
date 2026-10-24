@@ -1,0 +1,4 @@
+keyword,expected_course_id,expected_title,expected_level
+Python,python-automation,Python for Automation & Data,Beginner
+Web,web-dev-basics,Full-Stack Web Foundations,Intermediate
+React,react-deep-dive,React Deep Dive & Component Architecture,Intermediate

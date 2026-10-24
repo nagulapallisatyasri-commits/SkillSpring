@@ -1,0 +1,18 @@
+{
+  "0": "os",
+  "3": "TestSkillSpringUnittest",
+  "5": ".open_catalogue",
+  "7": "MyLearningPage",
+  "9": "TestSkillSpringUISmoke",
+  "12": "CourseDetailsPage",
+  "13": ".test_tc04_open_course_in_new_tab_and_return",
+  "16": ".get_text",
+  "23": ".js_click",
+  "24": ".is_visible",
+  "38": ".test_tc02_enrol_open_course_and_verify_in_my_learning",
+  "39": "layout.tsx",
+  "40": ".find_clickable",
+  "41": ".open",
+  "42": ".__init__",
+  "43": ".switch_to_new_tab"
+}
